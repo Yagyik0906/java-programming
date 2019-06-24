@@ -1,0 +1,16 @@
+import java.util.Scanner;
+class inher
+{
+public void main()
+{
+Scanner sc=new Scanner(System.in);
+System.out.println("enter the limit of the series to be sumed : ");
+int n=sc.nextInt(),sum=0;
+for(int i=1;i<=n;i++)
+{
+sum=sum+(sum*10+1);
+}
+sum=sum+1;
+System.out.println("the sum of the series till the given limit : "+sum);
+}
+}

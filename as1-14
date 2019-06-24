@@ -1,0 +1,25 @@
+class pattern
+{
+void main()
+{
+char ch='A';
+for(int i=0;i<5;i++)
+{
+for(int j=0;j<i;j++)
+System.out.print(" ");
+for(int j=i;j<5;j++)
+{
+System.out.print(ch);
+ch++;
+}
+for(int k=4;k>i;k--)
+{
+System.out.print(ch);
+ch++;
+}
+System.out.println();
+if(ch=='Z')
+ch='A';
+}
+}
+}

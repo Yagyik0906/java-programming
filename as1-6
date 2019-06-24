@@ -1,0 +1,21 @@
+import java .io.*;
+class stbshift
+{
+public void main()throws IOException
+{
+BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+StringBuffer st= new StringBuffer();
+String s;
+System.out.println("Enter the string to be operaed on :");
+s=br.readLine();
+char ch;
+String w="";
+for(int i=0;i<s.length();i++)
+{
+ch=s.charAt(i);
+ch=(char)(ch+1);
+w=w+ch;
+}
+System.out.println("The manipulated string is: "+w);
+}
+}

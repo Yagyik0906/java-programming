@@ -1,0 +1,23 @@
+import java.util.Scanner;
+class armstrong
+{
+public void isArmstrong()
+{
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter the number to be checked : ");
+int a= sc.nextInt(),flag=0;
+if(cubesum(a)==a)
+System.out.println("the number enterted is a armstrong number");
+else 
+System.out.println("the number enterted is not a armstrong number");
+}
+int cubesum(int n)
+{
+int sum=0;
+for(int i=n;i!=0;i=i/10)
+{
+sum=sum+(i%10)*(i%10)*(i%10);
+}
+return sum;
+}
+}

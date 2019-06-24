@@ -1,0 +1,21 @@
+import java.util.Scanner;
+class perfect
+{
+public void main()
+{
+Scanner sc=new Scanner(System.in);
+System.out.println("enter the range of number sto be checked : ");
+int n=sc.nextInt();
+for(int i=1;i<=n;i++)
+{
+int sum=0;
+for(int j=1;j<=i/2;j++)
+{
+if(i%j==0)
+sum=sum+i;
+}
+if(sum==i)
+System.out.println("the perfect number is : "+i);
+}
+}
+}

@@ -1,0 +1,21 @@
+import java.util.Scanner;
+class atob
+{
+public void main()
+{
+Scanner sc=new Scanner (System.in);
+System.out.println("Enter the numbers to be powered on : ");
+int a=sc.nextInt();
+int b=sc.nextInt();
+int result;
+result=power(a,b);
+System.out.println("The result of the manipulation is: "+result);
+}
+int power(int x,int y)
+{
+if(y==0)
+return 1;
+else
+return (x*power(x,y-1));
+}
+}

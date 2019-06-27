@@ -1,0 +1,30 @@
+import java .util.Scanner;
+class loop1
+{
+public void main()
+{
+Scanner sc=new Scanner(System.in);
+int n;
+System.out.println("Enter the number :");
+n=sc.nextInt();
+System.out.println("The for loop demonstration");
+for (int i=0;i<n;i++)
+{
+System.out.println("number : "+i);
+}
+System.out.println("The while loop demonstration");
+int i=0;
+while(i<n)
+{
+System.out.println("number : "+i);
+i++;
+}
+System.out.println("The do while loop demonstration");
+i=0;
+do
+{
+System.out.println("number : "+i);
+i++;
+}while(i<n);
+}
+}

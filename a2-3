@@ -1,0 +1,33 @@
+import java.util.Scanner;
+class magic
+{
+public void main()
+{
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter the number to be checked :");
+int n=sc.nextInt();
+int result;
+result=clac(n);
+while((result/10)!=0)
+result=clac(result);
+if(result==1)
+{
+System.out.println("The number entered is a magic number.");
+}
+else
+{
+System.out.println("The number entered is not a magic number.");
+}
+}
+int clac(int a)
+{
+if(a==0)
+{
+return 0;
+}
+else
+return (a%10+clac(a/10));
+}
+}
+
+

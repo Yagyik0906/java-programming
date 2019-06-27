@@ -1,0 +1,22 @@
+import java .util.Scanner;
+class gcd
+{
+public void main()
+{
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter the numbers to be found out the gcd : ");
+int x=sc.nextInt();
+int y=sc.nextInt();
+int result =check(x,y);
+System.out.println("The gcd for the two numbers are : "+result);
+}
+int check(int a,int b)
+{
+if(b!=0)
+{
+return check(b,a%b);
+}
+else 
+return a;
+}
+} 

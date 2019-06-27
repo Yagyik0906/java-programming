@@ -1,0 +1,41 @@
+class keepWorkingSmart
+{
+public static void main()
+{
+keepWorkingSmart kws=new keepWorkingSmart();
+kws.how();
+kws.conclusion();
+}
+void how()
+{
+System.out.println("The key to easy and precise success is 25% hardwork and 75% smartwork");
+System.out.println("Smart work means minimizing the efforts and time consumption");
+System.out.println("And increasing the quality and quantity of work");
+System.out.println("The person with smart work is always free to do extra circular activities");
+}
+void conclusion()
+{
+System.out.println("Conclusion");
+System.out.println("One must do smart work with hardwork and not only hardwork");
+}
+}
+class keepWorkingHard extends keepWorkingSmart
+{
+public static void main()
+{
+keepWorkingHard kwh=new keepWorkingHard();
+kwh.how();
+kwh.conclusion();
+}
+void how()
+{
+System.out.println("The secret of hard work in the consistency of the mind .");
+System.out.println("A person must be hard working means he should work more than the average people .");
+System.out.println("the person must also work when others are enjoying and wasting the precious time given to them");
+System.out.println("The rest depends on the person who has to do hard work , like how he mentally and physically deals with the work");
+}
+void conclusion()
+{
+System.out.println("The person must be consistent , focused and determined in the work he is doing to be hard working");
+}
+}
